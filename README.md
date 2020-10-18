@@ -1,8 +1,33 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Source code for the portfolio of Daniel Walford
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+This is the codebase used to create the portfolio for Daniel Walford
+
+## This app is designed to run in a docker container
+
+There are some Make commands available to this app
+
+### `make build-dev`
+
+Creates a docker image that can then be run, this uses development configs
+
+### `make build-prod`
+
+Creates a docker image that can then be run, this uses production configs
+
+### `make run-dev`
+
+Runs build-dev first and then begins to run the develop image in a new container
+
+### `make run-prod`
+
+Runs build-dev first and then begins to run the production image in a new container
+
+
+## Available node Scripts
+
+Alternatively to run the app outside of a docker container then in the project directory, you can run:
 
 ### `npm start`
 
@@ -36,33 +61,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
