@@ -1,0 +1,30 @@
+$white: #dddddd; // off-white
+$black: #111111; // off-black
+$shadow-light: #aaaaaa;
+$brand-blue: #54c4ef; // brand blue
+
+$colors: (
+                ("white", $white),
+                ("black", $black),
+                ("brand-blue", $brand-blue)
+);
+
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}
+
+@mixin background-util {
+  .background {
+    @each $color, $colorcode in $colors {
+      &--#{$color} {
+        background-color: $colorcode;
+      }
+    }
+  }
+}
+
+@include background-util
