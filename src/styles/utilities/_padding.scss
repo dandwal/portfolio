@@ -1,0 +1,180 @@
+@import "./grid/variables";
+// TODO in progress - possibly might get axed
+@mixin padding-util {
+  .padding {
+    //
+    &-top {
+      @for $i from 0 through 24 {
+        @include breakpoint(xs) {
+          &-xs--#{$i} {
+            padding-top: ($baseline * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 24 {
+        @include breakpoint(sm) {
+          &-sm--#{$i} {
+            padding-top: ($baseline * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 24 {
+        @include breakpoint(md) {
+          &-md--#{$i} {
+            padding-top: ($baseline * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 24 {
+        @include breakpoint(lg) {
+          &-lg--#{$i} {
+            padding-top: ($baseline * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 24 {
+        @include breakpoint(xl) {
+          &-xl--#{$i} {
+            padding-top: ($baseline * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 24 {
+        &--#{$i} {
+          padding-top: ($baseline * $i) !important;
+        }
+      }
+    }
+
+    &-bottom {
+      @for $i from 0 through 24 {
+        @include breakpoint(xs) {
+          &-xs--#{$i} {
+            padding-top: ($baseline * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 24 {
+        @include breakpoint(sm) {
+          &-sm--#{$i} {
+            padding-bottom: ($baseline * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 24 {
+        @include breakpoint(md) {
+          &-md--#{$i} {
+            padding-bottom: ($baseline * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 24 {
+        @include breakpoint(lg) {
+          &-lg--#{$i} {
+            padding-bottom: ($baseline * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 24 {
+        @include breakpoint(xl) {
+          &-xl--#{$i} {
+            padding-top: ($baseline * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 24 {
+        &--#{$i} {
+          padding-bottom: ($baseline * $i) !important;
+        }
+      }
+    }
+
+    &-left {
+      @for $i from 0 through 10 {
+        @include breakpoint(xs) {
+          &-xs--#{$i} {
+            padding-left: ($col-part * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 10 {
+        @include breakpoint(sm) {
+          &-sm--#{$i} {
+            padding-left: ($col-part * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 10 {
+        @include breakpoint(md) {
+          &-md--#{$i} {
+            padding-left: ($col-part * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 10 {
+        @include breakpoint(lg) {
+          &-lg--#{$i} {
+            padding-left: ($col-part * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 10 {
+        @include breakpoint(xl) {
+          &-xl--#{$i} {
+            padding-left: ($col-part * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 10 {
+        &--#{$i} {
+          padding-left: ($col-part * $i) !important;
+        }
+      }
+    }
+
+    &-right {
+      @for $i from 0 through 10 {
+        @include breakpoint(xs) {
+          &-xs--#{$i} {
+            padding-left: ($col-part * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 10 {
+        @include breakpoint(sm) {
+          &-sm--#{$i} {
+            padding-right: ($col-part * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 10 {
+        @include breakpoint(md) {
+          &-md--#{$i} {
+            padding-right: ($col-part * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 10 {
+        @include breakpoint(lg) {
+          &-lg--#{$i} {
+            padding-right: ($col-part * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 10 {
+        @include breakpoint(xl) {
+          &-xl--#{$i} {
+            padding-left: ($col-part * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 10 {
+        &--#{$i} {
+          padding-right: ($col-part * $i) !important;
+        }
+      }
+    }
+  }
+}
+
+@include padding-util;

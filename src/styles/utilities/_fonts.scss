@@ -4,3 +4,16 @@ $base-font-family: "Calibri", "Century Gothic", Helvetica, sans-serif, Arial;
 $base-font-size: 18px;
 $base-font-weight: 400;
 $base-text-colour: $black;
+
+
+@mixin font-sizes-util {
+  .font-size {
+    @for $i from 8 through 40 {
+      &--#{$i} {
+        font-size: #{$i}px !important;
+      }
+    }
+  }
+}
+
+@include font-sizes-util
