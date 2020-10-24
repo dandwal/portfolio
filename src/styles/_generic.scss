@@ -1,6 +1,7 @@
 @import 'bootstrap/utilities/typography';
 @import 'bootstrap/utilities/colors';
 
+
 body {
   font-family: $font-family-base;
   font-size: $font-size-base;
@@ -14,6 +15,11 @@ body {
 // ------------------------------ Used for Sticky Footer Begin ------------------------------
 .content {
   padding-bottom: -20px;
+}
+
+.background-lettering{
+  background-image: url('../content/assets/letter-background.png') ;
+  background-repeat: repeat;
 }
 
 .page-container {

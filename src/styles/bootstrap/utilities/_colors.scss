@@ -2,11 +2,12 @@
 
 $white: #dddddd;
 $black: #111111;
-$brand-blue: #8bd4f1; // brand blue
 $light: #e9ecef;
 $dark: #212529;
+$brand-blue: #8bd4f1;
+$brand-purple: #623aab;
 
-$theme-colors: (
-        "primary": $brand-blue,
-        "danger": #ff4136
-);
+$primary: $brand-blue;
+$secondary: $brand-purple;
+
+$theme-colors: ();

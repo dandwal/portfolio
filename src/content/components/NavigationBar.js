@@ -1,5 +1,6 @@
 import React from 'react'
-import linkedInIcon from '../assets/LI-In-Bug.png'
+import LinkedInIcon from '../assets/LI-In-Bug.png'
+import GithubIcon from '../assets/GitHub-Mark-Light-64px.png'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
@@ -7,7 +8,6 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 export const NavigationBar = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="brand-blue" variant="brand-blue">
-            {/*<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">*/}
 
             <Navbar.Brand className={"mr-5"} href="/">Daniel Walford</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
@@ -25,7 +25,10 @@ export const NavigationBar = () => {
                 </Nav>
                 <Nav>
                     <Nav.Link href="https://uk.linkedin.com/in/daniel-walford">
-                        <img className={"header-widget"} src={linkedInIcon} alt={"linked-in portfolio"}/>
+                        <img className={"header-widget"} src={LinkedInIcon} alt={"Linked-in portfolio"}/>
+                    </Nav.Link>
+                    <Nav.Link href="https://github.com/dandwal">
+                        <img className={"header-widget"} src={GithubIcon} alt={"Github user dandwal"}/>
                     </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
