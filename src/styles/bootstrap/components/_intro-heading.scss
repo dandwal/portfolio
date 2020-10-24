@@ -1,0 +1,25 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+.intro {
+  &--heading {
+    font-weight: $font-weight-bolder;
+    font-size: $font-size-base * 5;
+  }
+
+  &--sub-heading {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base * 2;
+  }
+
+  &--p {
+    font-size: $font-size-lg;
+  }
+  &--color-primary {
+    color: $secondary;
+  }
+  &--banner-dark {
+    width: 100%;
+    background-color: rgba(0,0,0,0.31);
+  }
+}

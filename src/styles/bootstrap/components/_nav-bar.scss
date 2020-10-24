@@ -1,0 +1,9 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "../utilities/colors";
+
+.navbar-brand-blue {
+  .navbar-toggler-icon {
+    background-image: escape-svg($navbar-dark-toggler-icon-bg);
+  }
+}
