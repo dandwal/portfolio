@@ -2,6 +2,8 @@ import React from 'react';
 import './App.scss';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {Homepage} from "./content/pages/Homepage";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
     return (
