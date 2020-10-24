@@ -4,6 +4,8 @@ import {Footer} from '../components/Footer'
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
+import Button from 'react-bootstrap/Button'
+import face from '../assets/dw_face.svg'
 
 
 export const Homepage = () => {
@@ -17,14 +19,13 @@ export const Homepage = () => {
 const HomepageContent = () => {
     return (
         <div>
-            <Container>
+            <Container className={"d-none d-sm-block"}>
                 <Row>
                     <Col className={"mt-5"}/>
                 </Row>
             </Container>
             <div className={"intro--banner-dark mt-5"}>
                 <Container className={"mt-5 content wrapper justify-content-md-center"}>
-
                     <Row className={""}>
                         <Col className={""}>
                             <h1 className={"intro--heading"}><span>Hi, I am </span><span
@@ -35,6 +36,21 @@ const HomepageContent = () => {
                     </Row>
                 </Container>
             </div>
+            <Container>
+                <Row>
+                    <Col className={"mt-2"}/>
+                </Row>
+                <Row>
+                    <Col>
+                        <Button variant={"secondary"} size={"lg"} href={"/about"} className={"mb-5"}>Find out more about
+                            me</Button>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col className={"mt-5"}/>
+                </Row>
+            </Container>
+            <img src={face} alt={"Daniel Walford Avatar"} className={"face d-none d-sm-block"}/>
         </div>
     )
 }
