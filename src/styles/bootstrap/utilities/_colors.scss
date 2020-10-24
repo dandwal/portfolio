@@ -1,0 +1,12 @@
+// Replace saturated colors / mono
+
+$white: #dddddd;
+$black: #111111;
+$brand-blue: #8bd4f1; // brand blue
+$light: #e9ecef;
+$dark: #212529;
+
+$theme-colors: (
+        "primary": $brand-blue,
+        "danger": #ff4136
+);

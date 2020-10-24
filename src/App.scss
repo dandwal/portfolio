@@ -1,7 +1,6 @@
 @import 'styles/bootstrap/custom';
-@import 'styles/utilities/grid/grid';
-@import 'styles/utilities/colors/colors';
-@import 'styles/utilities/links';
+@import 'styles/bootstrap/components/header';
+@import 'styles/bootstrap/components/footer';
+@import 'styles/bootstrap/components/nav-bar';
+
 @import 'styles/generic';
-@import 'styles/components/header';
-@import 'styles/components/nav';

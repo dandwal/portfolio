@@ -1,0 +1,16 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "../utilities/colors";
+
+
+.header {
+  &-widget {
+    width: 40px;
+  }
+
+  &-box-shadow {
+    &--light {
+      box-shadow: 0 4px 2px -2px $gray-700;
+    }
+  }
+}
