@@ -34,23 +34,15 @@ const HomepageContent = () => {
                             <p className={"intro--p"}>Fullstack developer with a speciality in frontend.</p>
                         </Col>
                     </Row>
+                    <Row>
+                        <Col>
+                            <Button variant={"secondary"} size={"lg"} href={"/about"} className={"mb-3"}>Find out more about
+                                me</Button>
+                        </Col>
+                    </Row>
                 </Container>
             </div>
-            <Container>
-                <Row>
-                    <Col className={"mt-2"}/>
-                </Row>
-                <Row>
-                    <Col>
-                        <Button variant={"secondary"} size={"lg"} href={"/about"} className={"mb-5"}>Find out more about
-                            me</Button>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col className={"mt-5"}/>
-                </Row>
-            </Container>
-            <img src={face} alt={"Daniel Walford Avatar"} className={"face d-none d-sm-block"}/>
+            <img src={face} alt={"Daniel Walford Avatar"} className={"face d-none d-md-block"}/>
         </div>
     )
 }
