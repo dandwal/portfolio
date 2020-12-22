@@ -1,13 +1,23 @@
-@import 'bootstrap/utilities/typography';
-@import 'bootstrap/utilities/colors';
+@import 'utilities/typography';
+@import 'utilities/colors';
 
 
-body {
+* {
+  margin: 0; /* remove all default margins */
+}
+
+html {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.1);
   font-family: $font-family-base;
   font-size: $font-size-base;
-  background-color: $white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100%;
 }
 
 

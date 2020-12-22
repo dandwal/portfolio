@@ -19,30 +19,31 @@ export const Homepage = () => {
 const HomepageContent = () => {
     return (
         <div>
-            <Container className={"d-none d-sm-block"}>
-                <Row>
-                    <Col className={"mt-5"}/>
-                </Row>
-            </Container>
-            <div className={"intro--banner-dark mt-5"}>
-                <Container className={"mt-5 content wrapper justify-content-md-center"}>
-                    <Row className={""}>
-                        <Col className={""}>
-                            <h1 className={"intro--heading"}><span>Hi, I am </span><span
-                                className={"intro--color-primary"}>Daniel</span><span>!</span></h1>
-                            <p className={"intro--sub-heading"}>Senior Developer</p>
-                            <p className={"intro--p"}>Fullstack developer with a speciality in frontend.</p>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <Button variant={"secondary"} size={"lg"} href={"/about"} className={"mb-3"}>Find out more about
-                                me</Button>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
-            <img src={face} alt={"Daniel Walford Avatar"} className={"face d-none d-md-block"}/>
+
+            {/*<Container className={"d-none d-sm-block"}>*/}
+            {/*    <Row>*/}
+            {/*        <Col className={"mt-5"}/>*/}
+            {/*    </Row>*/}
+            {/*</Container>*/}
+            {/*<div className={"intro--banner-dark mt-5"}>*/}
+            {/*    <Container className={"mt-5 content wrapper justify-content-md-center"}>*/}
+            {/*        <Row className={""}>*/}
+            {/*            <Col className={""}>*/}
+            {/*                <h1 className={"intro--heading"}><span>Hi, I am </span><span*/}
+            {/*                    className={"intro--color-primary"}>Daniel</span><span>!</span></h1>*/}
+            {/*                <p className={"intro--sub-heading"}>Senior Developer</p>*/}
+            {/*                <p className={"intro--p"}>Fullstack developer with a speciality in frontend web development. Based in Cardiff.</p>*/}
+            {/*            </Col>*/}
+            {/*        </Row>*/}
+            {/*        <Row>*/}
+            {/*            <Col>*/}
+            {/*                <Button variant={"secondary"} size={"lg"} href={"/about"} className={"mb-3"}>Find out more about*/}
+            {/*                    me</Button>*/}
+            {/*            </Col>*/}
+            {/*        </Row>*/}
+            {/*    </Container>*/}
+            {/*</div>*/}
+            {/*<img src={face} alt={"Daniel Walford Avatar"} className={"face d-none d-md-block"}/>*/}
         </div>
     )
 }

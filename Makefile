@@ -4,7 +4,7 @@ build-dev:
 
 .phony: build-prod
 build-prod:
-	docker build -f Dockerfile.prod -t portfolio:prod .
+	docker build -f Dockerfile.prod -t danny4kk/portfolio:prod .
 
 .phony: run-dev
 run-dev: build-dev
@@ -23,4 +23,10 @@ run-prod: build-prod
 		-it \
 		--rm \
 		-p 1337:80 \
-		portfolio:prod
+		danny4kk/portfolio:prod
+
+.phony: deploy
+deploy:
+	docker push danny4kk/portfolio:prod
+	# TODO tag releases with a new version number taken from an argument
+	docker tag danny4kk/portfolio:prod danny4kk/portfilio:latest
