@@ -19,7 +19,6 @@ export const Homepage = () => {
 const HomepageContent = () => {
     return (
         <div>
-
             {/*<Container className={"d-none d-sm-block"}>*/}
             {/*    <Row>*/}
             {/*        <Col className={"mt-5"}/>*/}
