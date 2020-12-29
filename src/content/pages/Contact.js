@@ -4,8 +4,11 @@ import {Footer} from '../components/Footer'
 
 export const Contact = () => {
     return (<div className={"page-container background-lettering"}>
+        <a className="skip-link" href="#main">Skip to main</a>
         <Header/>
-        <ContactContent/>
+        <main id="main">
+            <ContactContent/>
+        </main>
         <Footer/>
     </div>)
 }

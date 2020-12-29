@@ -17,7 +17,7 @@ export const Bar = () => {
                 <li className="name"><a href="/">Daniel Walford</a></li>
                 <Item rootURI={"/about"} rootName={"About"}/>
                 <Item rootName={"Experience"} isParent={true} subNavigationItems={experiencesNavSubNavigationItems}/>
-                <Item rootURI={"/projects"} rootName={"Projects"}/>
+                <Item rootURI={"/projects/portfolio"} rootName={"Projects"}/>
                 <Item rootURI={"/contact"} rootName={"Contact"}/>
                 <li className="item item-img">
                     <a href="https://uk.linkedin.com/in/daniel-walford" className={"logo"}><img
@@ -38,17 +38,19 @@ export const Bar = () => {
 }
 
 export const Toggle = (props) => {
-    const closeNavigationIcon = <div className={"cross"}/>
+    const closeNavigationIcon = <div className={"cross"} aria-hidden="true"/>
     const openNavigationIcon = <div>
-        <div class={"hamburger-line"}/>
-        <div className={"hamburger-line"}/>
-        <div className={"hamburger-line"}/>
+        <div class={"hamburger-line"} aria-hidden="true"/>
+        <div className={"hamburger-line"} aria-hidden="true"/>
+        <div className={"hamburger-line"} aria-hidden="true"/>
     </div>
     const toggle = props.navigationOpen ? closeNavigationIcon : openNavigationIcon;
     return (
         <li className="toggle">
             <a href={"#"}
-               onClick={props.toggleNavigation}>
+               onClick={props.toggleNavigation}
+               aria-label={"Toggle the menu"}
+            >
                 {toggle}
             </a>
         </li>

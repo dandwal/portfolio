@@ -10,8 +10,11 @@ import face from '../assets/dw_face.svg'
 
 export const Homepage = () => {
     return (<div className={"page-container background-lettering"}>
+        <a className="skip-link" href="#main">Skip to main</a>
         <Header/>
-        <HomepageContent/>
+        <main id="main">
+            <HomepageContent/>
+        </main>
         <Footer/>
     </div>)
 }
