@@ -16,9 +16,9 @@ export const Item = (props) => {
     let subNavigation = ""
     if (props.subNavigationItems) {
         let subMenuClasses = "subnavigation" + (subNavigationOpen ? " subnavigation-active": "")
-        subNavigation = <ul class={subMenuClasses}>{
+        subNavigation = <ul className={subMenuClasses}>{
             props.subNavigationItems.map((item) => {
-                return <Item rootURI={item.URI} rootName={item.name} isSubItem={true}/>
+                return <Item rootURI={item.URI} rootName={item.name} isSubItem={true} key={item.name}/>
             })
         }</ul>
     }

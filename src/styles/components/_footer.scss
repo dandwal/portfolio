@@ -7,3 +7,8 @@ footer {
   padding: 20px 0 20px 0;
   color: $white;
 }
+
+// For hidden components at end of page to compensate for the footer (adds a scroll bar when needed)
+.page-push {
+  margin-bottom: 60px;
+}

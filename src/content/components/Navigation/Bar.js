@@ -40,19 +40,19 @@ export const Bar = () => {
 export const Toggle = (props) => {
     const closeNavigationIcon = <div className={"cross"} aria-hidden="true"/>
     const openNavigationIcon = <div>
-        <div class={"hamburger-line"} aria-hidden="true"/>
+        <div className={"hamburger-line"} aria-hidden="true"/>
         <div className={"hamburger-line"} aria-hidden="true"/>
         <div className={"hamburger-line"} aria-hidden="true"/>
     </div>
     const toggle = props.navigationOpen ? closeNavigationIcon : openNavigationIcon;
     return (
         <li className="toggle">
-            <a href={"#"}
+            <button href={"#"}
                onClick={props.toggleNavigation}
                aria-label={"Toggle the menu"}
             >
                 {toggle}
-            </a>
+            </button>
         </li>
     )
 }

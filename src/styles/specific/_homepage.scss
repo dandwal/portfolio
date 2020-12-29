@@ -1,0 +1,36 @@
+@import "../utilities/colors";
+@import "../utilities/font-sizes";
+@import "../utilities/typography";
+
+.homepage-content {
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: start;
+}
+
+.homepage-intro {
+  font-weight: $font-weight-bold;
+
+  &__heading {
+    font-size: $font-size-massive;
+
+    &--secondary-color {
+      color: $secondary-color
+    }
+  }
+
+  &__sub-heading {
+    font-size: $font-size-base * 2;
+  }
+
+  &__desc {
+    font-size: $font-size-base;
+  }
+}
+
+@media all and (min-width: 960px) {
+  .homepage-content {
+    background-color: $black-dim;
+    margin-top: 50px;
+  }
+}

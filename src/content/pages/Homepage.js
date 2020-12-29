@@ -1,11 +1,6 @@
 import React from 'react'
 import {Header} from '../components/Header'
 import {Footer} from '../components/Footer'
-import Container from 'react-bootstrap/Container'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
-import Button from 'react-bootstrap/Button'
-import face from '../assets/dw_face.svg'
 
 
 export const Homepage = () => {
@@ -21,30 +16,18 @@ export const Homepage = () => {
 
 const HomepageContent = () => {
     return (
-        <div>
-            {/*<Container className={"d-none d-sm-block"}>*/}
-            {/*    <Row>*/}
-            {/*        <Col className={"mt-5"}/>*/}
-            {/*    </Row>*/}
-            {/*</Container>*/}
-            {/*<div className={"intro--banner-dark mt-5"}>*/}
-            {/*    <Container className={"mt-5 content wrapper justify-content-md-center"}>*/}
-            {/*        <Row className={""}>*/}
-            {/*            <Col className={""}>*/}
-            {/*                <h1 className={"intro--heading"}><span>Hi, I am </span><span*/}
-            {/*                    className={"intro--color-primary"}>Daniel</span><span>!</span></h1>*/}
-            {/*                <p className={"intro--sub-heading"}>Senior Developer</p>*/}
-            {/*                <p className={"intro--p"}>Fullstack developer with a speciality in frontend web development. Based in Cardiff.</p>*/}
-            {/*            </Col>*/}
-            {/*        </Row>*/}
-            {/*        <Row>*/}
-            {/*            <Col>*/}
-            {/*                <Button variant={"secondary"} size={"lg"} href={"/about"} className={"mb-3"}>Find out more about*/}
-            {/*                    me</Button>*/}
-            {/*            </Col>*/}
-            {/*        </Row>*/}
-            {/*    </Container>*/}
-            {/*</div>*/}
+        <div className={"wrapper homepage-content"}>
+            <h1 className={""}><span className={"homepage-intro__heading"}>Hi, I am </span><span
+                className={"homepage-intro__heading homepage-intro__heading--secondary-color"}>Daniel</span><span
+                className={"homepage-intro__heading"}>!</span></h1>
+            <h2 className={"homepage-intro__sub-heading"}>Senior Developer</h2>
+            <p className={"homepage-intro__desc"}>Fullstack developer that specialises in frontend web development.
+                Based in
+                Cardiff.</p>
+            <div>
+                <a className={"button-a button-a--cta button-a--dont-grow"} href={"/about"} tabIndex={0}>Find out more about me</a>
+            </div>
+            <div className={"page-push"}/>
             {/*<img src={face} alt={"Daniel Walford Avatar"} className={"face d-none d-md-block"}/>*/}
         </div>
     )
