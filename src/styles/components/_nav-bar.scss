@@ -1,4 +1,5 @@
 @import "../utilities/colors";
+@import "../utilities/font-sizes";
 
 nav {
   background-color: $third-color;
@@ -74,7 +75,7 @@ nav {
 
 .item, .name, .toggle {
   a, a:link, a:visited, a:hover, a:active, button, button:link, button:visited, button:hover, button:active {
-    border:none;
+    border: none;
     background-color: $bright-grey;
     color: $primary-color;
     text-decoration: none;
@@ -109,9 +110,10 @@ nav {
   align-items: center;
 }
 
-.navigation li a:not(.logo) {
+.navigation li a:not(.logo), .navigation li button:not(.logo) {
   display: block;
   padding: 15px 5px;
+  font-size: $font-size-base;
 }
 
 .navigation li.subitem a {
@@ -139,6 +141,10 @@ nav {
 
 .active .item {
   display: block;
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+  flex: 1 1 100%;
 }
 
 /* Subnavigation up from mobile screens */
@@ -235,6 +241,7 @@ nav {
   }
   .subnavigation-active {
     border-radius: 0;
+    background-color: unset;
   }
 }
 

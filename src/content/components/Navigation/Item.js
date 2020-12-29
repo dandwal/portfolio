@@ -7,10 +7,10 @@ export const Item = (props) => {
     if (subNavigationOpen){
         listClasses += " subnavigation-active"
     }
-    const parentAnchor = <a tabIndex="0" onClick={toggleSubNavigation} href={"#"}>
+    const parentAnchor = <button tabIndex="0" onClick={toggleSubNavigation} href={"#"}>
         {props.rootName}
         <div className={"has-subnavigation" + (subNavigationOpen ? " nav-arrow-up" : "")}/>
-    </a>
+    </button>
     const nulliparousAnchor = <a href={props.rootURI}>{props.rootName}</a>
     const anchor = props.isParent ? parentAnchor : nulliparousAnchor
     let subNavigation = ""
