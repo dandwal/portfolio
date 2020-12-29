@@ -77,6 +77,22 @@ nav {
     color: $primary-color;
     text-decoration: none;
   }
+
+  a:focus {
+    box-shadow: 0 5px 0 0 $white;
+    background-color: $super-yellow;
+    text-decoration: none;
+    color: $black;
+  }
+}
+
+.item-img {
+  a:focus {
+    box-shadow: 0 5px 0 0 $white;
+    background-color: transparent;
+    text-decoration: none;
+    color: $black;
+  }
 }
 
 .logo {
@@ -151,12 +167,19 @@ nav {
   margin: 0 0 3px 10px;
 }
 
+.nav-arrow-up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  margin: 3px 0 0 10px;
+
+}
+
 .subitem a {
   padding: 10px 15px;
 }
 
 .subnavigation-active {
-  background-color: #111;
+  background-color: $black;
   border-radius: 3px;
 }
 
@@ -224,7 +247,7 @@ nav {
     position: absolute;
     left: 0;
     top: 68px;
-    background: #111;
+    background: $black;
   }
   .toggle {
     display: none;

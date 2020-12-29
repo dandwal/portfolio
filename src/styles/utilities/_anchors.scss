@@ -1,5 +1,12 @@
 @import "colors";
 
+a:focus {
+  box-shadow: 0 5px 0 0 $black;
+  background-color: $super-yellow;
+  text-decoration: none;
+  color: $black;
+}
+
 .brand-link {
   font-size: 18px;
   line-height: 1.78;
