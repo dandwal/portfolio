@@ -1,0 +1,22 @@
+@import "../utilities/colors";
+@import "../utilities/font-sizes";
+@import "../utilities/typography";
+
+.article-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  &--direction-row {
+    flex-direction: row;
+  }
+
+  &--size-mini {
+    padding-right: 50%;
+  }
+}
+
+.article {
+  &--dark {
+    background-color: $black-dim;
+  }
+}
