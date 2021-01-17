@@ -13,10 +13,31 @@
   &--size-mini {
     padding-right: 50%;
   }
+
+  &--spaced {
+    justify-content: space-evenly;
+  }
 }
 
 .article {
+  &__image-header {
+    flex: 0 1 auto;
+  }
+
   &--dark {
     background-color: $black-dim;
+  }
+
+  &__paragraph {
+    &--mini {
+      flex: 0 1 45%
+    }
+  }
+}
+
+/* Tablet navigation */
+@media all and (min-width: 700px) {
+  .article-wrapper {
+    flex-direction: row;
   }
 }

@@ -1,9 +1,9 @@
 import React from 'react'
 import {Header} from '../components/Header'
 import {Footer} from '../components/Footer'
-import Container from 'react-bootstrap/Container'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
+import ons_logo from '../assets/ons-logo.svg'
+import red7_logo from '../assets/red7_logo.png'
+import sg_logo from '../assets/sg_logo.png'
 
 export const About = () => {
     return (<div className={"page-container background-lettering"}>
@@ -12,60 +12,96 @@ export const About = () => {
         <main id="main">
             <AboutContent/>
         </main>
-        <Footer/>
+        <Footer relative={true}/>
     </div>)
 }
 
 const AboutContent = () => {
-    return (
-        <article className={"wrapper"}>
-            <h1>About me</h1>
-            <p>Fullstack developer that specialises in frontend web development.
-                Based in
-                Cardiff.</p>
-            <article className={"article article--dark"}>
-                <div className={"article-wrapper article-wrapper--flex-direction-row article-wrapper--size-mini"}>
-                    <h2> Education</h2>
-                    <p>I Studied <b>BSc (Hons) Computing & Games Development</b> at the University of Plymouth,
-                        whilst
-                        working as an IT consultant for Cherith (Wales) ltd between 2012-2015.</p>
-                </div>
+    return (<section className="timeline">
+            <ul>
+                <li className={"in-view"}>
+                    <div>
+                        <time>2019</time>
+                        <p>I currently work for the <b>Office of National Statistics (ONS)</b> as a <b>Software Engineer
+                            (Frontend Developer) - Senior Executive Officer</b> since 2019. I am working with a team to
+                            build and maintain the public-facing website <a href={"https://www.ons.gov.uk"}
+                                                                            className={"brand-link--on-dark"}>ons.gov.uk</a> and
+                            the internal Content Management System (CMS) for the publishing teams. Please find out more
+                            by visiting my <a href={"/experience/web-dev"} className={"brand-link--on-dark"}>Web
+                                Developer Experience</a> page.
+                        </p>
+                    </div>
+                </li>
+                <li className={"in-view"}>
+                    <div>
+                        <time>2018</time>
+                        Promoted at <b>Red7Mobile</b> to <b>Lead Developer</b>; leading a team of 16 developers and overseeing all
+                        games. Due to our team's success compared to all other studios, we
+                        became the main game studio for Scientific Games globally.
+                    </div>
+                </li>
+                <li className={"in-view"}>
+                    <div>
+                        <time>2017</time>
+                        Promoted at <b>Red7Mobile</b> to <b>Senior Developer</b>. <b>Scientific Games</b> acquires Red7Mobile after testing
+                        our team out against competitors from around the globe. Scientific Games is arguably the largest
+                        and most successful company in the global gambling industry.
+                    </div>
+                </li>
+                <li className={"in-view"}>
+                    <div>
+                        <time>2015</time>
+                        Joined <b>Red7Mobile</b> ltd a start-up that had been operating for 3 years before I joined.
+                    </div>
+                </li>
+                <li className={"in-view"}>
+                    <div>
+                        <time>2012</time>
+                        Joined <b>Cherith (Wales) ltd</b> as an <b>IT Consultant</b>.
+                    </div>
+                </li>
+                <li className={"in-view"}>
+                    <div>
+                        <time>2012</time>
+                        Studied <b>BSc (Hons) Computing & Games Development</b> at the <b>University of Plymouth</b>.
+                    </div>
+                </li>
+            </ul>
+            <div className={"page-push"}/>
 
-            </article>
-            <article>
-                <h2>Career</h2>
-                <p>I Worked for <b>Red7 Mobile ltd</b> between 2015-2019 as a <b>Game Developer</b> which was
-                    acquired by <b>Scientific Games Corporations</b>. I Created web-based games for desktop,
-                    mobile and tablet devices. These games are played around the globe by millions of people in
-                    many languages and currencies. Started as <b>Junior Developer</b> then in 2017 became <b>Senior
-                        Developer</b> to finally be promoted in 2018 to <b>Lead Developer</b> in which I lead a
-                    team of 16 developers. Find out more by visiting my <a href={"/experience/game-dev"}
-                                                                           className={"brand-link"}>Game
-                        Developer Experience</a> page.</p>
-                <p>
-                    Currently, work for the <b>Office of National Statistics</b> as <b>Software Engineer
-                    (Frontend Developer) - Senior Executive Officer</b> since 2019. Working with a team to build
-                    and maintain the public-facing website <a href={"https://www.ons.gov.uk"}
-                                                              className={"brand-link"}>ons.gov.uk</a> along with
-                    the internal
-                    Content Management System (CMS) for the publishing teams. Find out more by visiting my <a
-                    href={"/experience/web-dev"} className={"brand-link"}>Web Developer Experience</a> page.
-                </p>
-            </article>
-            {/*    <Col>*/}
-            {/*        <h1>A bit about me, as a person</h1>*/}
-            {/*    </Col>*/}
-            {/*</Row>*/}
-            {/*<Row>*/}
-            {/*    <Col>*/}
-            {/*        <h2>Principles and paradigms</h2>*/}
-            {/*    </Col>*/}
-            {/*</Row>*/}
-            {/*<Row>*/}
-            {/*    <Col>*/}
-            {/*        <p> test*/}
-            {/*        </p>*/}
-            {/*    </Col>*/}
-        </article>
+        </section>
+
     )
 }
+
+
+(function () {
+
+    var items = document.querySelectorAll(".timeline li");
+
+    // check if an element is in viewport
+    // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+    function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function callbackFunc() {
+        for (var i = 0; i < items.length; i++) {
+            if (isElementInViewport(items[i])) {
+                items[i].classList.add("in-view");
+            }
+        }
+    }
+
+    // listen for events
+    window.addEventListener("load", callbackFunc);
+    window.addEventListener("resize", callbackFunc);
+    window.addEventListener("scroll", callbackFunc);
+
+})();

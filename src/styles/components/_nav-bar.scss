@@ -177,6 +177,10 @@ nav {
 
 }
 
+.subitem{
+  position: relative;
+  z-index: 1;
+}
 .subitem a {
   padding: 10px 15px;
 }
