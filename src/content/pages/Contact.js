@@ -16,7 +16,7 @@ export const Contact = () => {
 const ContactContent = () => {
     return (
         <div className={"content"}>
-
+            Email: danielwalforddeveloper@gmail.com
         </div>
     )
 }
