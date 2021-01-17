@@ -1,5 +1,6 @@
 @import 'utilities/typography';
 @import 'utilities/colors';
+@import "utilities/font-sizes";
 
 
 * {
@@ -21,6 +22,19 @@ body {
   min-height: 100%;
 }
 
+textarea {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 
 // ------------------------------ Used for Sticky Footer Begin ------------------------------
@@ -28,8 +42,8 @@ body {
   padding-bottom: -20px;
 }
 
-.background-lettering{
-  background-image: url('../content/assets/letter-backgroundV2.png') ;
+.background-lettering {
+  background-image: url('../content/assets/letter-backgroundV2.png');
   background-repeat: repeat;
 }
 

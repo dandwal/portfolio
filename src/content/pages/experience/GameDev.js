@@ -1,6 +1,7 @@
 import React from 'react'
 import {Header} from '../../components/Header'
 import {Footer} from '../../components/Footer'
+import construction from "../../assets/under-construction.png";
 
 export const GameDev = () => {
     return (<div className={"page-container background-lettering"}>
@@ -16,7 +17,7 @@ export const GameDev = () => {
 const GameDevContent = () => {
     return (
         <div className={"content"}>
-
+            <img src={construction} style={{width:"100%"}}></img>
         </div>
     )
 }
