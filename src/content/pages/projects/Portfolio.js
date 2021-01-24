@@ -17,7 +17,7 @@ export const Portfolio = () => {
 const PortfolioContent = () => {
     return (
         <div className={"content"}>
-            <img src={construction} style={{width:"100%"}}></img>
+            <img src={construction} style={{width:"100%"}} alt={"Web page under construction"}></img>
         </div>
     )
 }

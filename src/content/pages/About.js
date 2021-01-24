@@ -1,9 +1,6 @@
 import React from 'react'
 import {Header} from '../components/Header'
 import {Footer} from '../components/Footer'
-import ons_logo from '../assets/ons-logo.svg'
-import red7_logo from '../assets/red7_logo.png'
-import sg_logo from '../assets/sg_logo.png'
 
 export const About = () => {
     return (<div className={"page-container background-lettering"}>

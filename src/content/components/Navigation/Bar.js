@@ -16,6 +16,7 @@ export const Bar = () => {
             <ul className={navClasses}>
                 <li className="name"><a href="/">Daniel Walford</a></li>
                 <Item rootURI={"/about"} rootName={"About"}/>
+                <Item rootURI={"/tech"} rootName={"Technology"}/>
                 <Item rootName={"Experience"} isParent={true} subNavigationItems={experiencesNavSubNavigationItems}/>
                 <Item rootURI={"/projects/portfolio"} rootName={"Projects"}/>
                 <Item rootURI={"/contact"} rootName={"Contact"}/>

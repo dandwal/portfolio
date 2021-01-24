@@ -22,7 +22,9 @@ const HomepageContent = () => {
                 className={"homepage-intro__heading"}>!</span></h1>
             <h2 className={"homepage-intro__sub-heading"}>Senior Developer</h2>
             <p className={"homepage-intro__desc"}>Fullstack developer that specialises in frontend web development.
-                Based in Cardiff.</p>
+                Based in Cardiff. <br/>
+                Programming for 11 years, with 6 years of profession experience.
+            </p>
             <div>
                 <a className={"button-a button-a--cta button-a--dont-grow"} href={"/about"} tabIndex={0}>Find out more
                     about me</a>
